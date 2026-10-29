@@ -45,7 +45,7 @@ The five classification models were evaluated on the held-out test dataset using
 **Support Vector Machine (SVM)** was the best-performing model on this test split. It achieved the highest accuracy, AUC, F1-score, and MCC of the five models. Its results indicate a strong balance of predictive performance on the Dry Bean classification task.
 
 ### Streamlit App
-Replace this line with your deployed app URL: **STREAMLIT COMMUNITY CLOUD LINK**
+Replace this line with your deployed app URL: https://ml-classification-model-comparison-jszjkkdzarg7dfdhx3kv9w.streamlit.app/
 
 ## Project files
 - app.py — Streamlit frontend and evaluation.
