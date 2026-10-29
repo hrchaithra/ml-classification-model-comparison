@@ -12,15 +12,13 @@ Implement and compare five classification algorithms on one dataset and provide 
 The training script retrieves the dataset using ucimlrepo, then creates a stratified 80/20 train/test split with random state 42. The held-out test rows are written to test_data.csv.
 
 ## c. GitHub Repository Link
-Replace this line with your repository URL after creating your own GitHub repository: https://github.com/hrchaithra/ml-classification-model-comparison
+GitHub repository: https://github.com/hrchaithra/ml-classification-model-comparison
 
-## d. Models used and evaluation
+## d. Models used
 
 Models: Logistic Regression, Decision Tree, K-Nearest Neighbors, Gaussian Naive Bayes, and Support Vector Machine.
 
-Run python train_model.py to train and save models and produce training_metrics.csv. Copy the actual results from that file into the table below; do not submit placeholder or invented scores.
-
-## Model Comparison and Evaluation
+## Model Comparison
 
 The five classification models were evaluated on the held-out test dataset using Accuracy, AUC, Precision, Recall, F1-score, and Matthews Correlation Coefficient (MCC).
 
@@ -40,12 +38,12 @@ The five classification models were evaluated on the held-out test dataset using
 - **Gaussian Naive Bayes:** Achieved an accuracy of 89.79% and an AUC of 0.9916. Its AUC was high despite its lower accuracy compared with the top-performing models.
 - **Support Vector Machine (SVM):** Achieved the highest accuracy (92.21%), AUC (0.9949), F1-score (0.9222), and MCC (0.9059) among the evaluated models.
 
-### Overall Winner
+### Overall Best Model
 
 **Support Vector Machine (SVM)** was the best-performing model on this test split. It achieved the highest accuracy, AUC, F1-score, and MCC of the five models. Its results indicate a strong balance of predictive performance on the Dry Bean classification task.
 
 ### Streamlit App
-Replace this line with your deployed app URL: https://ml-classification-model-comparison-jszjkkdzarg7dfdhx3kv9w.streamlit.app/
+Deployed Streamlit app URL: https://ml-classification-model-comparison-jszjkkdzarg7dfdhx3kv9w.streamlit.app/
 
 ## Project files
 - app.py — Streamlit frontend and evaluation.
@@ -55,20 +53,3 @@ Replace this line with your deployed app URL: https://ml-classification-model-co
 - training_metrics.csv — holdout comparison results.
 - requirements.txt — Python dependencies.
 
-## Run locally
-1. Install dependencies: pip install -r requirements.txt
-2. Train models and generate the test CSV: python train_model.py
-3. Launch the app: streamlit run app.py
-4. Upload test_data.csv or another labelled test CSV and evaluate each model from the dropdown.
-
-## Deployment
-1. Push all project files, including generated model/*.joblib and test_data.csv, to your own GitHub repository.
-2. In Streamlit Community Cloud, create a new app and select app.py on the main branch.
-3. Test the public URL in a private/incognito browser window.
-4. Add the GitHub and live app links to the submission PDF.
-
-## Evaluation conventions
-- Accuracy: fraction of correct predictions.
-- AUC: macro-averaged one-vs-rest multiclass ROC AUC.
-- Precision, recall, and F1: weighted averages across classes.
-- MCC: multiclass Matthews correlation coefficient.
