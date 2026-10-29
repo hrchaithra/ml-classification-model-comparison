@@ -1,4 +1,4 @@
-# Classification Model Comparison — ML Assignment 2
+# Classification Model Comparison
 
 ## a. Problem statement
 Implement and compare five classification algorithms on one dataset and provide an interactive Streamlit application that evaluates labelled test data using saved models.
@@ -55,7 +55,7 @@ Replace this line with your deployed app URL: **STREAMLIT COMMUNITY CLOUD LINK**
 - training_metrics.csv — holdout comparison results.
 - requirements.txt — Python dependencies.
 
-## Run locally / BITS Virtual Lab
+## Run locally
 1. Install dependencies: pip install -r requirements.txt
 2. Train models and generate the test CSV: python train_model.py
 3. Launch the app: streamlit run app.py
